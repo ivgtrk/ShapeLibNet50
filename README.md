@@ -13,22 +13,17 @@ In your project, add a link to the library and use the namespace 'ShapeLibNet50'
 Your code may look like this:
 ```c#
 using ShapeLibNet50;
-namespace ConsoleApp1
+
+static void Main()
 {
-    static class Program
-    {
-        static void Main()
-        {
-            Circle circ = new( 5.0 );
-            Console.WriteLine( circ.ToString() );       // 78.540
-            Console.WriteLine( circ.GetArea );          // 78,53981633
+    Circle circ = new( 5.0 );
+    Console.WriteLine( circ.ToString() );       // 78.540
+    Console.WriteLine( circ.GetArea );          // 78,53981633
 
-            Triangle triangle = new( 60, 91, 109 );
-            Console.WriteLine( triangle.ToString() );   // 2730.000
-            Console.WriteLine( triangle.IsRight() );    // True
+    Triangle triangle = new( 60, 91, 109 );
+    Console.WriteLine( triangle.ToString() );   // 2730.000
+    Console.WriteLine( triangle.IsRight() );    // True
 
-            Console.ReadKey();
-        }
-    }   
+    Console.ReadKey();
 }
 ```
