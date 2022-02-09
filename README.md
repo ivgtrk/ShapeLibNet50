@@ -11,6 +11,7 @@ ____
 ## How to use
 In your project, add a link to the library and use the namespace 'ShapeLibNet50'.
 Your code may look like this:
+```c#
 using ShapeLibNet50;
 namespace ConsoleApp1
 {
@@ -30,3 +31,4 @@ namespace ConsoleApp1
         }
     }   
 }
+```
