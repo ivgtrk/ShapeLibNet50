@@ -1,13 +1,13 @@
-CREATE TABLE Products (
+﻿CREATE TABLE Products (
 	Id INT PRIMARY KEY,
 	"Name" TEXT
 );
 
 INSERT INTO Products
 VALUES
-	(1, 'C# in a Nutshell'),
-	(2, 'KIA Rio'),
-	(3, 'ASUS Rog Strix');
+	(1, 'C# 8.0 and .NET Core 3.0'),
+	(2, 'Volvo XC60 Recharge'),
+	(3, 'Apple MacBook Air 13');
 
 CREATE TABLE Categories (
 	Id INT PRIMARY KEY,
@@ -18,7 +18,7 @@ INSERT INTO Categories
 VALUES
 	(1, 'Book'),
 	(2, 'Car'),
-	(3, 'Gift');
+	(3, 'Laptops');
 
 CREATE TABLE ProductCategories (
 	ProductId INT FOREIGN KEY REFERENCES Products(Id),
